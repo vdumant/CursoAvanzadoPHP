@@ -10,7 +10,7 @@
         {% for job in jobs %}
             <tr>
                 <td>{{ job.title }}</td>
-                <td><a href="/jobs/{{ job.id }}/delete">Delete</a></td>
+                <td><a href="/admin/jobs/{{ job.id }}/delete">Delete</a></td>
             </tr>
         {% endfor %}
     </table>

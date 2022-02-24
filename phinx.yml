@@ -18,8 +18,8 @@ environments:
         adapter: mysql
         host: localhost
         name: cursophp
-        user: homestead
-        pass: secret
+        user: root
+        pass: vduman
         port: 3306
         charset: utf8
 
@@ -28,7 +28,7 @@ environments:
         host: localhost
         name: testing_db
         user: root
-        pass: ''
+        pass: vduman
         port: 3306
         charset: utf8
 

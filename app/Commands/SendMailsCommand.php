@@ -27,8 +27,8 @@ class SendMailsCommand extends Command
             $mailer = new Swift_Mailer($transport);
 
             $message = (new Swift_Message('Contact request'))
-                ->setFrom(['resume@domain.com' => 'Contact'])
-                ->setTo(['yourmail@domain.org'])
+            ->setFrom(['contact@mail.com' => 'Contact form'])
+            ->setTo(['duman.fabian.g@gmail.com', 'duman.fabian.g@gmail.com' => 'A name'])
                 ->setBody('Hi, you have a new contact request from ' . $pendingMessage->name
                     . '. Contact: ' . $pendingMessage->mail . ' with message: ' . $pendingMessage->message
                 )
